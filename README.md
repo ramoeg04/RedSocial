@@ -1,3 +1,7 @@
+#Instrucciones: 
+
+0- Abrir el link proporcionado 1- Copiar a URL del Repositorio (donde dice clone) 2- Abrir terminal windows 3- inicializar el git (git init) 4- ejecuatar el comando git clone "URL_Repositorio" 5- ejecutar el comando "code ." para abrir visual studio con el path de tu proyecto 6- ejecutar el comando npm install 7- ejecutar el comando ng serve
+
 # Lilap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
