@@ -1,0 +1,39 @@
+<mat-toolbar id="nav-color">
+    <span>Red Social de Animales</span>
+    <span class="example-spacer"></span>
+    <div *ngIf="backButton">
+        <button mat-raised-button color="primary" (click)="showAllPosts()"> Show All Posts</button>
+    </div>
+  </mat-toolbar>
+
+<div id="post-display">
+    <div  class="display">
+
+        
+        <mat-card class="post" *ngFor="let card of post">
+            <mat-card-header>
+            <div mat-card-avatar class="example-header-image" (click)="openDialogUser(card.owner.id)">
+
+                <img mat-card-image [src]="card.owner.picture">
+            </div>
+            <mat-card-title (click)="openDialogUser(card.owner.id)">{{card.title}} {{card.owner.firstName}} {{card.owner.lastName}}</mat-card-title>
+            <mat-card-subtitle>{{card.publishDate|date}}</mat-card-subtitle>
+            </mat-card-header>
+            <img *ngIf="card.image" mat-card-image [src]="card.image" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            <p *ngIf="card.text">
+                {{card.text}}
+            </p>
+            <p *ngIf="card.tags">   
+                <a mat-button *ngFor="let tag of card.tags" (click)="filterByHashtag(tag)">#{{tag}} </a>
+                </p>
+            <a *ngIf="card.link" href="*card.link">{{card.link}}</a>
+            </mat-card-content>
+            <mat-card-actions>
+            <button mat-button>LIKES {{card.likes ? card.likes : '0'}}</button>
+            <button mat-button (click)="openDialogComment(card.id)">COMENTARIOS {{card.comment ? card.comment.total: '0'}}</button>
+            </mat-card-actions>
+        </mat-card>
+    
+    </div>
+</div>

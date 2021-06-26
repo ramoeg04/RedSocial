@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#post-display{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+}
+
+.example-header-image {
+        background-size: cover;
+        border-radius: 50%;
+        overflow: hidden;
+}
+
+#nav-color{
+        background-color: blueviolet;
+}
+    
