@@ -1,6 +1,16 @@
 #Instrucciones: 
 
-0- Abrir el link proporcionado 1- Copiar a URL del Repositorio (donde dice clone) 2- Abrir terminal windows 3- inicializar el git (git init) 4- ejecuatar el comando git clone "URL_Repositorio" 5- ejecutar el comando "code ." para abrir visual studio con el path de tu proyecto 6- ejecutar el comando npm install 7- ejecutar el comando ng serve
+#0- Abrir el link proporcionado 
+#1- Copiar a URL del Repositorio (donde dice clone) 
+#2- Crear una carpeta y Abrir terminal windows 
+#3- inicializar el git (git init) 
+#4- ejecuatar el comando git clone "URL_Repositorio" 
+#5- ejecutar el comando "code ." para abrir visual studio con el path de tu proyecto 
+#6- ejecutar el comando npm install
+#7- Modificar la variable api que se encuenta en environment/environment.ts, por el api proporcionado de la pagina suministrada.
+#8- ejecutar el comando ng serve
+
+
 
 # Lilap
 
